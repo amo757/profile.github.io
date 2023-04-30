@@ -21,7 +21,9 @@ function App() {
 			{user && <Route path="/" exact element={<Main />} />}
 			<Route path="/signup" exact element={<Signup />} />
 			<Route path="/login" exact element={<Login />} />
-			<Route path="/" element={<Navigate replace to="/login" />} />
+			{/* <Route path="/" element={<Navigate replace to="/login" />} /> */}
+			{/* <Route path="/" element={<Navigate replace to="/login" />} /> */}
+			<Route path="/" exact element={<Main />} />
 			<Route path="/users/:id/verify/:token" element={<EmailVerify />} />
 			<Route path="/csp" element={<CsP />} />			
             <Route path="/about" element={<About />} />
